@@ -25,8 +25,8 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  *
  */
 #define PRODUCT_NAME ""
-#define PRODUCT_SHORT_NAME "iPXE"
-#define PRODUCT_URI "https://ipxe.org"
+#define PRODUCT_SHORT_NAME "WAIFUboot"
+#define PRODUCT_URI "https://waifus.win"
 
 /*
  * Tag line
@@ -35,7 +35,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  * by "iPXE", then the standard tag line "Open Source Network Boot
  * Firmware" is unlikely to fit neatly onto the screen.
  */
-#define PRODUCT_TAG_LINE "Open Source Network Boot Firmware"
+#define PRODUCT_TAG_LINE "PXEboot but with waifus"
 
 /*
  * Error messages

@@ -26,7 +26,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  * initialisation vector, thus rendering the banner almost invisible
  * to the user.
  */
-#define BANNER_TIMEOUT		20
+#define BANNER_TIMEOUT		10
 #define ROM_BANNER_TIMEOUT	( 2 * BANNER_TIMEOUT )
 
 /*
@@ -36,10 +36,10 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 
 #define	NET_PROTO_IPV4		/* IPv4 protocol */
 //#define NET_PROTO_IPV6	/* IPv6 protocol */
-#undef	NET_PROTO_FCOE		/* Fibre Channel over Ethernet protocol */
-#define	NET_PROTO_STP		/* Spanning Tree protocol */
-#define	NET_PROTO_LACP		/* Link Aggregation control protocol */
-#define	NET_PROTO_EAPOL		/* EAP over LAN protocol */
+//#undef	NET_PROTO_FCOE		/* Fibre Channel over Ethernet protocol */
+//#define	NET_PROTO_STP		/* Spanning Tree protocol */
+//#define	NET_PROTO_LACP		/* Link Aggregation control protocol */
+//#define	NET_PROTO_EAPOL		/* EAP over LAN protocol */
 
 /*
  * PXE support
@@ -56,9 +56,9 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define	DOWNLOAD_PROTO_TFTP	/* Trivial File Transfer Protocol */
 #define	DOWNLOAD_PROTO_HTTP	/* Hypertext Transfer Protocol */
 #undef	DOWNLOAD_PROTO_HTTPS	/* Secure Hypertext Transfer Protocol */
-#undef	DOWNLOAD_PROTO_FTP	/* File Transfer Protocol */
-#undef	DOWNLOAD_PROTO_SLAM	/* Scalable Local Area Multicast */
-#undef	DOWNLOAD_PROTO_NFS	/* Network File System Protocol */
+//#undef	DOWNLOAD_PROTO_FTP	/* File Transfer Protocol */
+//#undef	DOWNLOAD_PROTO_SLAM	/* Scalable Local Area Multicast */
+//#undef	DOWNLOAD_PROTO_NFS	/* Network File System Protocol */
 //#undef DOWNLOAD_PROTO_FILE	/* Local filesystem access */
 
 /*
@@ -76,8 +76,8 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  * HTTP extensions
  *
  */
-#define HTTP_AUTH_BASIC		/* Basic authentication */
-#define HTTP_AUTH_DIGEST	/* Digest authentication */
+//#define HTTP_AUTH_BASIC		/* Basic authentication */
+//#define HTTP_AUTH_DIGEST	/* Digest authentication */
 //#define HTTP_AUTH_NTLM	/* NTLM authentication */
 //#define HTTP_ENC_PEERDIST	/* PeerDist content encoding */
 //#define HTTP_HACK_GCE		/* Google Compute Engine hacks */
@@ -86,9 +86,9 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  * 802.11 cryptosystems and handshaking protocols
  *
  */
-#define	CRYPTO_80211_WEP	/* WEP encryption (deprecated and insecure!) */
-#define	CRYPTO_80211_WPA	/* WPA Personal, authenticating with passphrase */
-#define	CRYPTO_80211_WPA2	/* Add support for stronger WPA cryptography */
+//#define	CRYPTO_80211_WEP	/* WEP encryption (deprecated and insecure!) */
+//#define	CRYPTO_80211_WPA	/* WPA Personal, authenticating with passphrase */
+//#define	CRYPTO_80211_WPA2	/* Add support for stronger WPA cryptography */
 
 /*
  * Name resolution modules
@@ -115,8 +115,8 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 //#define	IMAGE_SDI		/* SDI image support */
 //#define	IMAGE_PNM		/* PNM image support */
 #define	IMAGE_PNG		/* PNG image support */
-#define	IMAGE_DER		/* DER image support */
-#define	IMAGE_PEM		/* PEM image support */
+//#define	IMAGE_DER		/* DER image support */
+//#define	IMAGE_PEM		/* PEM image support */
 //#define	IMAGE_ZLIB		/* ZLIB image support */
 //#define	IMAGE_GZIP		/* GZIP image support */
 
@@ -124,21 +124,21 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  * Command-line commands to include
  *
  */
-#define	AUTOBOOT_CMD		/* Automatic booting */
-#define	NVO_CMD			/* Non-volatile option storage commands */
-#define	CONFIG_CMD		/* Option configuration console */
-#define	IFMGMT_CMD		/* Interface management commands */
-#define	IWMGMT_CMD		/* Wireless interface management commands */
-#define IBMGMT_CMD		/* Infiniband management commands */
-#define FCMGMT_CMD		/* Fibre Channel management commands */
-#define	ROUTE_CMD		/* Routing table management commands */
+//#define	AUTOBOOT_CMD		/* Automatic booting */
+//#define	NVO_CMD			/* Non-volatile option storage commands */
+//#define	CONFIG_CMD		/* Option configuration console */
+//#define	IFMGMT_CMD		/* Interface management commands */
+//#define	IWMGMT_CMD		/* Wireless interface management commands */
+//#define IBMGMT_CMD		/* Infiniband management commands */
+//#define FCMGMT_CMD		/* Fibre Channel management commands */
+//#define	ROUTE_CMD		/* Routing table management commands */
 #define IMAGE_CMD		/* Image management commands */
-#define DHCP_CMD		/* DHCP management commands */
-#define SANBOOT_CMD		/* SAN boot commands */
+//#define DHCP_CMD		/* DHCP management commands */
+//#define SANBOOT_CMD		/* SAN boot commands */
 #define MENU_CMD		/* Menu commands */
-#define LOGIN_CMD		/* Login command */
-#define SYNC_CMD		/* Sync command */
-#define SHELL_CMD		/* Shell command */
+//#define LOGIN_CMD		/* Login command */
+//#define SYNC_CMD		/* Sync command */
+//#define SHELL_CMD		/* Shell command */
 //#define NSLOOKUP_CMD		/* DNS resolving command */
 //#define TIME_CMD		/* Time commands */
 //#define DIGEST_CMD		/* Image crypto digest commands */
@@ -152,33 +152,33 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 //#define PARAM_CMD		/* Form parameter commands */
 //#define NEIGHBOUR_CMD		/* Neighbour management commands */
 //#define PING_CMD		/* Ping command */
-//#define CONSOLE_CMD		/* Console command */
+#define CONSOLE_CMD		/* Console command */
 //#define IPSTAT_CMD		/* IP statistics commands */
 //#define PROFSTAT_CMD		/* Profiling commands */
 //#define NTP_CMD		/* NTP commands */
 //#define CERT_CMD		/* Certificate management commands */
 //#define IMAGE_MEM_CMD		/* Read memory command */
-#define IMAGE_ARCHIVE_CMD	/* Archive image management commands */
+//#define IMAGE_ARCHIVE_CMD	/* Archive image management commands */
 
 /*
  * ROM-specific options
  *
  */
-#undef	NONPNP_HOOK_INT19	/* Hook INT19 on non-PnP BIOSes */
-#define	AUTOBOOT_ROM_FILTER	/* Autoboot only devices matching our ROM */
+//#undef	NONPNP_HOOK_INT19	/* Hook INT19 on non-PnP BIOSes */
+//#define	AUTOBOOT_ROM_FILTER	/* Autoboot only devices matching our ROM */
 
 /*
  * Virtual network devices
  *
  */
-#define VNIC_IPOIB		/* Infiniband IPoIB virtual NICs */
+//#define VNIC_IPOIB		/* Infiniband IPoIB virtual NICs */
 //#define VNIC_XSIGO		/* Infiniband Xsigo virtual NICs */
 
 /*
  * Error message tables to include
  *
  */
-#undef	ERRMSG_80211		/* All 802.11 error descriptions (~3.3kb) */
+//#undef	ERRMSG_80211		/* All 802.11 error descriptions (~3.3kb) */
 
 /*
  * Obscure configuration options
