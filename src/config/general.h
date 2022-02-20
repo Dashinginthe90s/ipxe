@@ -124,16 +124,16 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  * Command-line commands to include
  *
  */
-//#define	AUTOBOOT_CMD		/* Automatic booting */
-//#define	NVO_CMD			/* Non-volatile option storage commands */
+#define	AUTOBOOT_CMD		/* Automatic booting */
+#define	NVO_CMD			/* Non-volatile option storage commands */
 #define	CONFIG_CMD		/* Option configuration console */
-//#define	IFMGMT_CMD		/* Interface management commands */
+#define	IFMGMT_CMD		/* Interface management commands */
 //#define	IWMGMT_CMD		/* Wireless interface management commands */
 //#define IBMGMT_CMD		/* Infiniband management commands */
 //#define FCMGMT_CMD		/* Fibre Channel management commands */
-//#define	ROUTE_CMD		/* Routing table management commands */
+#define	ROUTE_CMD		/* Routing table management commands */
 #define IMAGE_CMD		/* Image management commands */
-//#define DHCP_CMD		/* DHCP management commands */
+#define DHCP_CMD		/* DHCP management commands */
 //#define SANBOOT_CMD		/* SAN boot commands */
 #define MENU_CMD		/* Menu commands */
 //#define LOGIN_CMD		/* Login command */
@@ -144,7 +144,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 //#define DIGEST_CMD		/* Image crypto digest commands */
 //#define LOTEST_CMD		/* Loopback testing commands */
 //#define VLAN_CMD		/* VLAN commands */
-//#define PXE_CMD		/* PXE commands */
+#define PXE_CMD		/* PXE commands */
 //#define REBOOT_CMD		/* Reboot command */
 //#define POWEROFF_CMD		/* Power off command */
 //#define IMAGE_TRUST_CMD	/* Image trust management commands */
